@@ -43,7 +43,13 @@ export default function Home() {
         placeholder="Enter task"
       />
       <button onClick={addTask}>Add</button>
+
+      <ul>
+        {tasks.map((task) => (
+          <li key={task.id}>{task.title}</li>
+        ))}
+      </ul>
     </div>
-  )
+  );
 }
 
