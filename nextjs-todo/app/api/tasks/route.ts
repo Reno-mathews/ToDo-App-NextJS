@@ -1,4 +1,4 @@
-let tasks : { id: number; title: string }[] = [];
+let tasks : Task[] = [];
 
 export async function GET() {
     return Response.json(tasks);
@@ -10,6 +10,7 @@ export async function POST(req: Request) {
     const newTask = {
         id: Date.now(),
         title: body.title,
+        completed: false,
     };
 
     tasks.push(newTask);

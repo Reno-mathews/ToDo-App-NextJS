@@ -5,7 +5,8 @@ import { useEffect, useState } from "react";
 type Task = {
   id: number;
   title: string;
-}
+  completed: boolean;
+};
 
 export default function Home() {
   const [tasks, setTasks] = useState<Task[]>([]);
