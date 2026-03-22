@@ -32,5 +32,18 @@ export default function Home() {
   useEffect(() => {
     fetchTasks();
   }, []);
+
+  return (
+    <div style={{ padding: 20}}>
+      <h1>Todo App</h1>
+
+      <input
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        placeholder="Enter task"
+      />
+      <button onClick={addTask}>Add</button>
+    </div>
+  )
 }
 
