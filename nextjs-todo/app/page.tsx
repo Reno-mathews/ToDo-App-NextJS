@@ -20,7 +20,17 @@ export default function Home() {
   const addTask = async() => {
     if (!title) return;
 
-    
-  }
+    await fetch("/api/tasks", {
+      method: "POST",
+      body: JSON.stringify({ title }),
+    });
+
+    setTitle("");
+    fetchTasks();
+  };
+
+  useEffect(() => {
+    fetchTasks();
+  }, []);
 }
 
