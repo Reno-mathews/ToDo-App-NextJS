@@ -28,5 +28,13 @@ export async function PATCH(req: Request) {
 );
 
 return Response.json({ success: true });
-
 }
+
+const toggleTask = async (id: number) => {
+    await fetch("/api/tasks", {
+        method: "PATCH",
+        body: JSON.stringify({ id }),
+    });
+
+    fetchTasks();
+};
