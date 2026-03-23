@@ -17,3 +17,11 @@ export async function POST(req: Request) {
 
     return Response.json(newTask);
 }
+
+export async function PATCH(req: Request) {
+    const body = await req.json();
+
+    tasks = tasks.map((task) => 
+    task.id === body.id
+    ? { ...task,})
+}
