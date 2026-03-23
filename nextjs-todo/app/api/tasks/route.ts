@@ -23,5 +23,10 @@ export async function PATCH(req: Request) {
 
     tasks = tasks.map((task) => 
     task.id === body.id
-    ? { ...task,})
+    ? { ...task, completed: !task.completed }
+    :task
+);
+
+return Response.json({ success: true });
+
 }
