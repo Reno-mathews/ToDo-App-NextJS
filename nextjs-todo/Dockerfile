@@ -13,3 +13,8 @@ RUN npm Install
 # Copy all files
 COPY . .
 
+# Build Next.js app
+RUN npm run build
+
+# Expose port
+EXPOSE 3000
