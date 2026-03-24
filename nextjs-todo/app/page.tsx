@@ -39,6 +39,15 @@ export default function Home() {
     fetchTasks();
 };
 
+const deleteTask = async (id: number) => {
+  await fetch("/api/tasks", {
+    method: "DELETE",
+    body: JSON.stringify({ id }),
+  });
+
+  fetchTasks();
+}
+
   useEffect(() => {
     fetchTasks();
   }, []);
