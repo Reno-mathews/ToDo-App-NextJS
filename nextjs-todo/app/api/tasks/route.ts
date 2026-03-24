@@ -32,12 +32,13 @@ export async function PATCH(req: Request) {
     ? { ...task, completed: !task.completed }
     :task
 )
+}
 
 export async function DELETE(req: Request) {
     const body = await req.json();
 
     tasks = tasks.filter((task) => task.id !== body.id);
-}
+
 return Response.json({ success: true });
 }
 
