@@ -47,7 +47,19 @@ export default function Home() {
 
       <ul>
         {tasks.map((task) => (
-          <li key={task.id}>{task.title}</li>
+          <li key={task.id}>
+            <span
+              onClick={() => toggleTask(task.id)}
+              style={{
+                textDecoration: task.completed ? "line-through" : "none",
+                cursor: "pointer",
+              }}
+          >
+            {task.title}
+          </span>
+
+          <button onClick={() => deleteTask(task.id)}>❌</button>
+          </li>
         ))}
       </ul>
     </div>
