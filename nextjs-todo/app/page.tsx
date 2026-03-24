@@ -30,6 +30,15 @@ export default function Home() {
     fetchTasks();
   };
 
+  const toggleTask = async (id: number) => {
+    await fetch("/api/tasks", {
+        method: "PATCH",
+        body: JSON.stringify({ id }),
+    });
+
+    fetchTasks();
+};
+
   useEffect(() => {
     fetchTasks();
   }, []);
