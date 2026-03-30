@@ -6,8 +6,6 @@ type Task = {
   id: number;
   title: string;
   completed: boolean;
-  priority: "low" | "medium" | "high"
-  dueDate: string;
 };
 
 export default function Home() {
