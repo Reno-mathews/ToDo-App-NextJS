@@ -13,9 +13,7 @@ type Task = {
 export default function Home() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [title, setTitle] = useState("");
-  const [priority, setPriority] = useState("low");
-  const [dueDate, setDueDate] = useState("");
-  const [filter, setFilter] = useState("all");
+  const [priority, set]
 
   const fetchTasks = async() => {
     const res = await fetch("/api/tasks");
