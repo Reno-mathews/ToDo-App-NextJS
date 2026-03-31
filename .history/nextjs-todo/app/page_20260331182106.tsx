@@ -74,8 +74,8 @@ const filteredTasks = tasks.filter((task) => {
 
       <div className="min-h-screen bg-gray-100 flex items-center justify-center">
         <div className="bg-white p-6 rounded-xl shadow-md w-full max-w-md">
-
-        
+          
+        </div>
       
       <input
         value={title}
