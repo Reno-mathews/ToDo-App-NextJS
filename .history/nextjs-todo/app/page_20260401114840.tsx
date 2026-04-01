@@ -69,13 +69,12 @@ const filteredTasks = tasks.filter((task) => {
   }, []);
 
   return (
-
+    
       <div className="min-h-screen bg-gray-100 flex items-center justify-center">
         <div className="bg-white p-6 rounded-xl shadow-md w-full max-w-md">
-
-          <h1 className="text-2xl font-bold mb-4 text-center">Todo App</h1>
+        <h1 className="text-2xl font-bold mb-4 text-center">Todo App</h1>
         
-          <div className="flex gap-2 mb-4">
+      <div className="flex gap-2 mb-4">
         <input
           className="border p-2 flex-1 rounded"
           value={title}
