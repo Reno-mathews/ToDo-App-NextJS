@@ -145,8 +145,6 @@ const filteredTasks = tasks.filter((task) => {
                 >
                   {task.title}
                 </p>
-
-                
             </div>
 }
 
