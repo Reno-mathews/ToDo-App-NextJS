@@ -90,7 +90,7 @@ const filteredTasks = tasks.filter((task) => {
             </button>
         </div>
       </div>
-    
+    </div>
 
       <ul>
         {tasks.map((task) => (

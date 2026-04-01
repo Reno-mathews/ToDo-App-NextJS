@@ -83,14 +83,14 @@ const filteredTasks = tasks.filter((task) => {
             placeholder="Enter task"
           />
 
-          <button
-            className="bg-blue-500 text-white px-4 rounded hover:bg-blue-600"
-            onClick={addTask}>
-              Add
-            </button>
-        </div>
+        <button
+          className="bg-blue-500 text-white px-4 rounded hover:bg-blue-600"
+          onClick={addTask}>
+            Add
+          </button>
       </div>
-    
+    </div>
+  </div>
 
       <ul>
         {tasks.map((task) => (
