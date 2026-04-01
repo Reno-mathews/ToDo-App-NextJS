@@ -84,13 +84,6 @@ const filteredTasks = tasks.filter((task) => {
           />
 
           <div className="flex gap-2">
-            <select
-              className="border p-2 rounded-lg flex-1"
-              value={priority}
-              onChange={(e) => setPriority(e.target.value)}
-            >
-              
-            </select>
 
           <button
             className="bg-blue-500 text-white px-4 rounded hover:bg-blue-600"
