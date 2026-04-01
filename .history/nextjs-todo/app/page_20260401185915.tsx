@@ -169,12 +169,5 @@ const filteredTasks = tasks.filter((task) => {
                   )}
                 </div>
             </div>
-
-            <button
-              onClick={() => deleteTask(task.id)}
-              className="text-red-500 hover:text-red-700 text-lg"
-            >
-              X
-            </button>
 }
 
