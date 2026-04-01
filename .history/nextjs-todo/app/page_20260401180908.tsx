@@ -131,8 +131,8 @@ const filteredTasks = tasks.filter((task) => {
       <ul className="space-y-3">
         {filteredTasks.map((task) => (
           <li 
-            key={task.id}
-            className="flex justify-betwenn items-center bg-gray-50 p-3 rounded-lg shadow-sm hover:shadow-md transition"
+          key={task.id}
+          className="flex justify-betwenn items-center bg-gray-50 p-3 rounded-lg shadow-sm hover:shadow-md transition"
           >
             <span
               onClick={() => toggleTask(task.id)}
