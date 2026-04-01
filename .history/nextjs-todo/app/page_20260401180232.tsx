@@ -121,14 +121,9 @@ const filteredTasks = tasks.filter((task) => {
               ? "bg-blue-500 text-white"
               : "bg-gray-200"
             }`}
-            >
-              {f}
-            </button>
         ))}
       </div>
-
-      {/* Task List */}
-      <ul className="space-y-3">
+      <ul>
         {tasks.map((task) => (
           <li key={task.id}>
             <span

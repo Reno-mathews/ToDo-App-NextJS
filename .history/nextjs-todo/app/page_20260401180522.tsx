@@ -128,7 +128,7 @@ const filteredTasks = tasks.filter((task) => {
       </div>
 
       {/* Task List */}
-      <ul className="space-y-3">
+      <ul>
         {tasks.map((task) => (
           <li key={task.id}>
             <span

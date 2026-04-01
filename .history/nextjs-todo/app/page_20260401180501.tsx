@@ -126,9 +126,7 @@ const filteredTasks = tasks.filter((task) => {
             </button>
         ))}
       </div>
-
-      {/* Task List */}
-      <ul className="space-y-3">
+      <ul>
         {tasks.map((task) => (
           <li key={task.id}>
             <span
