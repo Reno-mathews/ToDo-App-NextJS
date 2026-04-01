@@ -100,8 +100,6 @@ const filteredTasks = tasks.filter((task) => {
               value={dueDate}
               onChange={(e) => setDueDate(e.target.value)}
             />
-
-            </div>
           <button
             className="bg-blue-500 text-white px-4 rounded hover:bg-blue-600"
             onClick={addTask}>
