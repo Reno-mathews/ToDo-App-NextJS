@@ -181,5 +181,5 @@ const filteredTasks = tasks.filter((task) => {
       </ul>
     </div>
   </div>
-);
+  );
 
