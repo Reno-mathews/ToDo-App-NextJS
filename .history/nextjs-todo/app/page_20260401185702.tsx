@@ -156,10 +156,7 @@ const filteredTasks = tasks.filter((task) => {
                         : task.priority === "medium"
                         ? "bg-yellow-500"
                         : "bg-green-500"
-                    }`}
-                  >
-                    {task.priority}
-                  </span>
+                    }
                 </div>
             </div>
 }
